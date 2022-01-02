@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<!-- zh 就是 zhongwen 中文的意思，英文是en 即 english -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一个页面</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /* 改变盒模型 */
+        }
+
+        /*  星号选择器代表选择所有的标签 */
+        /*  或者[id="八卦"]  代表选择满足条件的标签 可以简写为 #*/
+        #八卦 {
+            border: 1px solid red;
+            width: 400px;
+            height: 400px;
+            border-radius: 200px;
+            position: relative;
+            /* 如果border-radius 的像素是宽和高的一半，那必定是一个圆 */
+            /* border 的效果就是一个框，可以指定宽高颜色，1px 的意思是线条宽度 可以作为调试使用 */
+        }
+
+        #八卦>div:first-child {
+            border: 10px solid green;
+            width: 50%;
+            position: absolute;
+            left: 0;
+            background-color: black;
+            /* first-child 代表选择八卦div下的第一个div */
+            /* width 指定宽度为默认的一半 */
+        }
+
+        #八卦>div:nth-child(2) {
+            border: 10px solid blue;
+            width: 50%;
+            position: absolute;
+            right: 0;
+            background-color: white;
+            /* nth-child(2) 代表选择八卦div下的第二个div */
+        }
+
+        #八卦>div:nth-child(3) {
+            border: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="八卦">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div><!-- id 属性是可以使用中文的 -->
+
+    道可道，非常道
+</body>
+
+</html>
