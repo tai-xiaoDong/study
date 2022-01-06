@@ -46,14 +46,14 @@
 </tbody>
 <tfoot>  <!--底部-->
   <tr>
-    <td></td>
+    <td></td> <!--普通单元格-->
   </tr>
 </tfoot>
 
 日常表结构如下：
 thead tr th th th th th tr thead
-tbody tr td td td td td tr 
-      tr td td td td td tr tbody
+tbody tr th td td td td tr 
+      tr th td td td td tr tbody
 tfoot tr th td td td td tr tfoot 
 ~~~
 
