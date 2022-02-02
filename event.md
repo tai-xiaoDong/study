@@ -30,5 +30,5 @@ div.addEventListener('click',fn,bool) //不填bool默认为冒泡，TRUE表示�
 ~~~
 target 就是用户操作的元素
 currentTarget  就是程序员监听的元素
-stopPropagation 可以中断冒泡。捕获不可以取消
+stopPropagation 可以中断冒泡。阻止捕获和冒泡阶段中当前事件的进一步传播。
 ~~~
